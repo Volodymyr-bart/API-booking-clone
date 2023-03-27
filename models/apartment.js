@@ -1,6 +1,6 @@
 /* eslint-disable no-useless-escape */
 const { Schema, model } = require("mongoose");
-const Joi = require("joi");
+// const Joi = require("joi");
 
 const { handleMongooseError } = require("../helpers");
 
