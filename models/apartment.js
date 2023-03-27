@@ -32,7 +32,7 @@ const apartmentSchema = new Schema(
 
 apartmentSchema.post("save", handleMongooseError);
 
-const Apartament = model("apartament", userSchema);
+const Apartament = model("apartament", apartmentSchema);
 
 module.exports = {
   Apartament,
