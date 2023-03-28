@@ -8,23 +8,25 @@ const apartmentSchema = new Schema(
   {
     title: {
       type: String,
-      required: true,
+      // required: true,
     },
     imgUrl: {
       type: String,
-      required: true,
+      // required: true,
     },
     rating: {
       type: Number,
-      required: true,
+      // required: true,
     },
     price: {
       type: Number,
-      required: true,
+      // required: true,
+    },
+    location: {
+      Type: Object,
     },
     owner: {
-      Type: Array,
-      required: true,
+      Type: Object,
     },
   },
   { versionKey: false, timestamps: true }
@@ -32,8 +34,8 @@ const apartmentSchema = new Schema(
 
 apartmentSchema.post("save", handleMongooseError);
 
-const Apartament = model("apartament", apartmentSchema);
+const Apartment = model("apartment", apartmentSchema);
 
 module.exports = {
-  Apartament,
+  Apartment,
 };

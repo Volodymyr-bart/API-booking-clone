@@ -6,6 +6,7 @@ const messages = {
   409: "Conflict",
 };
 const HttpError = (code, message = messages[code]) => {
+  console.log(code);
   const error = new Error(message);
   error.code = code;
   return error;
