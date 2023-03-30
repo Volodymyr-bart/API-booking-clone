@@ -1,10 +1,10 @@
 Booking clone
 
 Users
-POST /users/register
-POST /users/login
-POST /users/logout
-GET /users/current
+- POST /users/register
+- POST /users/login
+- POST /users/logout
+- GET /users/current
 
 Apartaments
 GET /apartments
